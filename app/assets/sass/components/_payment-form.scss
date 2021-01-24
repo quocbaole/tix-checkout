@@ -1,0 +1,46 @@
+.pmt-item {
+  position: relative;
+  border-bottom: 1px solid $border-gray-300;
+  padding-bottom: 0.75rem;
+
+  .pmt-input {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0.25rem 0;
+
+    &:focus,
+    &.has-value {
+      padding-top: 2rem;
+
+      & + .pmt-label {
+        font-size: $size-base;
+        color: $blue-600;
+      }
+    }
+
+    &:invalid {
+      & ~ .pmt-error {
+        display: block;
+      }
+    }
+  }
+
+  .pmt-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: $size-lg;
+    transition: all 0.5s;
+  }
+
+  .pmt-error {
+    display: none;
+    color: $red-500;
+    font-size: $size-sm;
+  }
+}
+
+.phone {
+  display: none !important;
+}
