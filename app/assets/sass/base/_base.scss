@@ -1,0 +1,11 @@
+// Định nghĩa nhưng style mặc định cho trang web ở đây
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; // vì font-size của html là 16px nên 1rem = 16px
+}

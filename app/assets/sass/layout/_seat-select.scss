@@ -1,0 +1,127 @@
+.container {
+  .page-left {
+    .seat-select {
+      .seat-select__container {
+        width: 74%;
+        padding: 2rem;
+        .topContent {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .lefttittle {
+            .logoCinema {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: 1rem;
+              padding-bottom: 2rem;
+              img {
+                max-width: 3rem;
+              }
+            }
+          }
+          .righttittle {
+            text-align: center;
+            p {
+              color: $gray-text;
+              font-size: 0.8rem;
+            }
+            h1 {
+              color: $secondary;
+              font-size: 1.7rem;
+            }
+          }
+        }
+        .screen {
+          img {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+          }
+        }
+        .seat-placing {
+          max-width: 40rem;
+          margin: 0 auto;
+          .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .col {
+              width: 90%;
+              display: flex;
+              justify-content: space-between;
+
+              margin-bottom: 0.3rem;
+              i {
+                display: inline-block;
+                font-size: 1.5rem;
+                margin-right: 0.3rem;
+                color: #f7b500;
+              }
+            }
+          }
+          .normal-seat {
+            .col {
+              i {
+                color: #3e515d;
+              }
+            }
+          }
+          .last-row {
+            .col {
+              display: flex;
+              justify-content: left;
+              gap: 0.2rem;
+              .grow2 {
+                flex-grow: 2;
+              }
+              .grow1 {
+                flex-grow: 1.5;
+              }
+              .fa-couch {
+                color: #b03550;
+                flex-grow: 2;
+              }
+              .fa-arrow-up {
+                color: $gray-text;
+              }
+            }
+          }
+        }
+        .typeseat {
+          .typeseat__container {
+            margin: 0 auto;
+            padding-top: 2rem;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            .typeseat__item {
+              margin: 0 0.5rem;
+            }
+          }
+          .positionviews {
+            display: flex;
+            padding-top: 0.5rem;
+            .positionviews__container {
+              margin: 0 auto;
+              display: flex;
+              gap: 2rem;
+
+              .centerview {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 981px) {
+  .container .page-left .seat-select .seat-select__container {
+    width: 100%;
+  }
+}

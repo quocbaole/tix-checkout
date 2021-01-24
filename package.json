@@ -1,0 +1,35 @@
+{
+  "name": "udemy",
+  "version": "1.0.0",
+  "description": "'udemy assignment'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigeb/udemy-assignment.git"
+  },
+  "author": "undefined || vigeb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vigeb/udemy-assignment/issues"
+  },
+  "homepage": "https://github.com/vigeb/udemy-assignment#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "css-loader": "^5.0.1",
+    "postcss": "^8.2.2",
+    "postcss-loader": "^4.1.0",
+    "sass": "^1.32.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  },
+  "browserlists": [
+    "last 10 versions"
+  ]
+}

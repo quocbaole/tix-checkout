@@ -1,0 +1,22 @@
+// Định nghĩa mixin sass ở đây
+@mixin button(
+  $bg,
+  $color,
+  $border,
+  $radius,
+  $pd-y,
+  $pd-x,
+  $bg-hover,
+  $color-hover
+) {
+  background-color: $bg;
+  color: $color;
+  padding: $pd-y $pd-x;
+  border: 1px solid $border;
+  border-radius: $radius;
+  &:hover {
+    background: $bg-hover;
+    color: $color-hover;
+    text-decoration: none;
+  }
+}
