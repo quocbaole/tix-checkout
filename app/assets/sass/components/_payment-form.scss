@@ -1,6 +1,6 @@
 .pmt-item {
   position: relative;
-  border-bottom: 1px solid $border-gray-300;
+  color: $gray-text;
   padding-bottom: 0.75rem;
 
   .pmt-input {
@@ -8,13 +8,14 @@
     width: 100%;
     border: none;
     padding: 0.25rem 0;
+    padding-top: 0.5rem;
 
     &:focus,
     &.has-value {
-      padding-top: 2rem;
+      padding-top: 0.5rem;
 
       & + .pmt-label {
-        font-size: $size-base;
+        font-size: 0.8rem;
         color: $blue-600;
       }
     }
